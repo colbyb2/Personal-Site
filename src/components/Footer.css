@@ -1,0 +1,50 @@
+.footer-container {
+  background-color: var(--bg-nav);
+  color: var(--text-secondary);
+  overflow-x: clip;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-container {
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-icon-container {
+  margin: 0 5px;
+  overflow: hidden;
+}
+
+.footer-logo {
+  font-size: clamp(34px, 5vw, 44px);
+  transition: 200ms all ease-in-out;
+}
+
+.footer-logo:hover {
+  color: rgb(202, 78, 255);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.copywrite-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.copywrite-name {
+  color: rgba(245, 245, 245, 0.578);
+  margin-right: 5px;
+}
+
+.copywrite-year {
+  color: rgba(202, 78, 255, 0.77);
+}

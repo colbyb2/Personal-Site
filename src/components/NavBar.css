@@ -1,0 +1,166 @@
+/* Universal Properties */
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 6.5vh;
+  align-items: center;
+  background-color: transparent;
+  transition: 300ms all ease-in-out;
+  z-index: 100;
+}
+
+.nav-fill {
+  background-color: var(--bg-nav);
+}
+
+.name-logo {
+  font-size: 1.3rem;
+  font-family: "Monaco", "Lucida Console", "monospace";
+  cursor: pointer;
+  transition: 200ms all ease-in-out;
+  width: 30vw;
+  padding-left: 2vw;
+}
+
+.nav-fill .name-logo {
+  color: rgb(235, 235, 235);
+}
+
+.name-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Larger Screen */
+@media only screen and (min-width: 660px) {
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 5%;
+  }
+
+  .page-btn {
+    font-size: 1.1rem;
+    padding: 0 15px;
+    transition: 200ms all ease-in-out;
+  }
+
+  .page-btn:hover {
+    transform: scale(1.15);
+  }
+
+  .nav-button {
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav-fill .nav-button {
+    color: rgb(235, 235, 235);
+  }
+
+  .bars-icon {
+    display: none;
+  }
+
+  .burger-bar {
+    display: none;
+  }
+}
+
+/* Mobile Screen */
+@media only screen and (max-width: 659px) {
+  .button-container {
+    display: none;
+  }
+
+  .nav-button {
+    color: black;
+    text-decoration: none;
+  }
+
+  .bars-icon {
+    display: inline;
+    margin-left: auto;
+    margin-right: 5%;
+    font-size: 1.5rem;
+    transition: 200ms all ease-in-out;
+  }
+
+  .nav-fill .bars-icon {
+    color: rgb(235, 235, 235);
+  }
+
+  .bars-icon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .burger-bar {
+    background-color: rgb(45, 45, 45);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    z-index: 10;
+    width: 25vw;
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s right ease;
+  }
+
+  .menu-item {
+    font-size: 1.2rem;
+    padding: 35px 0;
+    color: rgb(235, 235, 235);
+    transition: 200ms all ease-in-out;
+  }
+
+  .menu-item:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .close-btn {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+
+  .menu-exit {
+    font-size: 1.5rem;
+    color: rgb(91, 91, 91);
+    margin-right: 5px;
+    transition: 200ms all ease-in-out;
+  }
+
+  .menu-exit:hover {
+    transform: scale(1.2);
+  }
+
+  .burger-bar.open-menu {
+    right: 0;
+  }
+
+  .burger-bar.close-menu {
+    right: -150px;
+  }
+
+  .menu-smile-item {
+    margin-top: auto;
+    color: rgba(235, 235, 235, 0.551);
+    font-size: 1.5rem;
+    margin-bottom: 20%;
+  }
+
+  .side-menu-link {
+    text-decoration: none;
+  }
+}

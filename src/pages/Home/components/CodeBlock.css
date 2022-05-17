@@ -1,0 +1,183 @@
+body {
+  /* --color-bg: #0e1341; */
+  --color-import: rgb(186, 180, 11);
+  --color-text: #e8e8e8;
+  --color-cursor: #901ed2;
+}
+
+.code-screen {
+  margin-top: 8vh;
+  background-color: var(--bg-secondary);
+  width: 100vw;
+  height: 450px;
+  overflow: clip;
+}
+
+.typing-container {
+  display: block;
+  padding-left: 25px;
+  width: fit-content;
+}
+
+.typed-out-1 {
+  overflow: hidden;
+  border-right: 0.15em solid var(--color-cursor);
+  color: var(--color-text);
+  white-space: nowrap;
+  animation: typing 1s steps(10, end) forwards, 100ms removeCursor 1s forwards;
+  width: 0;
+  margin: 5% 0;
+}
+
+.typed-out-2 {
+  overflow: hidden;
+  border-right: none;
+  color: var(--color-text);
+  white-space: nowrap;
+  animation: 3s typing 1s steps(30, end) forwards,
+    100ms removeCursor 4s forwards;
+  width: 0;
+  margin: 5% 0;
+}
+
+.typed-out-3 {
+  overflow: hidden;
+  border-right: none;
+  color: var(--color-text);
+  white-space: nowrap;
+  animation: 3s typing 4s steps(25, end) forwards,
+    100ms removeCursor 7s forwards;
+  width: 0;
+  margin: 5% 0;
+}
+
+.typed-out-4 {
+  overflow: hidden;
+  border-right: none;
+  color: var(--color-text);
+  white-space: nowrap;
+  animation: 4.5s typing 7s steps(30, end) forwards,
+    100ms removeCursor 11.5s forwards;
+  width: 0;
+  margin: 5% 0;
+}
+
+.typed-out-5 {
+  overflow: hidden;
+  border-right: none;
+  color: var(--color-text);
+  white-space: nowrap;
+  animation: 0.5s typing 11.5s steps(30, end) forwards,
+    100ms removeCursor 12s forwards;
+  width: 0;
+  margin: 5% 0;
+}
+
+.code-import-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#code-import-statement {
+  color: var(--color-import);
+}
+
+.import-text {
+  font-size: 1.2rem;
+  color: rgb(0, 206, 206);
+  margin: 10px 8px;
+  margin-left: 0;
+}
+
+.code-text {
+  font-size: 1.2rem;
+  color: var(--color-text);
+  margin: 10px 8px;
+  margin-left: 0;
+}
+
+.code-function-text {
+  color: var(--color-text);
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.code-text-normal {
+  font-size: 1.6rem;
+  transition: 200ms font-size ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .code-text-normal {
+    font-size: 1.3rem;
+  }
+
+  .typed-out-4 {
+    overflow: hidden;
+    border-right: none;
+    color: var(--color-text);
+    white-space: nowrap;
+    animation: 4.5s typing 7s steps(30, end) forwards,
+      100ms removeCursor 11.5s forwards, 100ms wrapLine 11.5s forwards;
+    width: 0;
+    margin: 5% 0;
+  }
+}
+
+.code-function-header-function {
+  color: rgb(74, 108, 150);
+  margin-right: 10px;
+}
+
+.code-function-header-name {
+  color: rgb(174, 172, 105);
+  margin-right: 10px;
+}
+
+.code-function-header-parentheses {
+  color: rgb(186, 180, 11);
+  margin-right: 10px;
+}
+
+.code-function-header-bracket {
+  color: rgb(186, 180, 11);
+}
+
+.code-function {
+}
+
+.code-function-closing-bracket {
+  color: rgb(186, 180, 11);
+}
+
+@keyframes typing {
+  from {
+    border-right: 0.15em solid var(--color-cursor);
+    width: 0;
+  }
+  to {
+    border-right: 0.15em solid var(--color-cursor);
+    width: 100%;
+  }
+}
+
+@keyframes removeCursor {
+  from {
+    border-right: 0.15em solid var(--color-cursor);
+  }
+  to {
+    border-right: none;
+  }
+}
+
+@keyframes wrapLine {
+  from {
+    white-space: nowrap;
+  }
+  to {
+    white-space: break-spaces;
+  }
+}
