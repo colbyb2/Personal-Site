@@ -1,7 +1,7 @@
 .outer-container {
   display: flex;
   flex-direction: column;
-  width: clamp(300px, 50%, 650px);
+  width: clamp(300px, 50%, 550px);
   margin-top: 30px;
   margin-bottom: 70px;
 }

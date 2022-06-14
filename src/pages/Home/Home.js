@@ -9,7 +9,7 @@ import AboutBlock from "./components/AboutBlock";
 
 function Home() {
   return (
-    <div className="container">
+    <div className="home-container">
       <CodeBlock />
       <AboutBlock />
     </div>

@@ -123,8 +123,8 @@ const TechCard = ({ name, photo }) => {
 
 const PortfolioBlock = () => {
   return (
-    <div className="block portfolio-container">
-      <div className="portfolio-title">Interested in what I've built?</div>
+    <div className="block home-portfolio-container">
+      <div className="home-portfolio-title">Interested in what I've built?</div>
       <div className="portfolio-body-container">
         <div className="portfolio-body">Check out my portfolio</div>
         <Link to="/portfolio" className="portfolio-link">

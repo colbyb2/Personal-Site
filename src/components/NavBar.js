@@ -35,9 +35,9 @@ function NavBar() {
         <Link to="/portfolio" className="nav-button page-btn">
           <div>Portfolio</div>
         </Link>
-        <Link to="/qualifications" className="nav-button page-btn">
+        {/*<Link to="/qualifications" className="nav-button page-btn">
           <div>Qualifications</div>
-        </Link>
+        </Link>*/}
         <Link to="/contact" className="nav-button page-btn">
           <div>Contact</div>
         </Link>
@@ -62,9 +62,9 @@ const NavbarComponent = ({ showMenu, toggleMenu }) => {
       <Link to="/portfolio" className="side-menu-link">
         <div className="menu-item">Portfolio</div>
       </Link>
-      <Link to="/qualifications" className="side-menu-link">
+      {/*<Link to="/qualifications" className="side-menu-link">
         <div className="menu-item">Qualifications</div>
-      </Link>
+      </Link>*/}
       <Link to="/contact" className="side-menu-link">
         <div className="menu-item">Contact</div>
       </Link>
