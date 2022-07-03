@@ -1,5 +1,5 @@
 import "./Contact.css";
-import Information from "../../information";
+import Information from "../../information.js";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
