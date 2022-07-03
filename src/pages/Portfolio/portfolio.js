@@ -3,6 +3,8 @@ import "./portfolio.css";
 import uniroomLogo from "../../assets/UniRoomLogo.png";
 import stockLogo from "../../assets/StockLogo.png";
 import globeIco from "../../assets/Globe.ico";
+import bookIco from "../../assets/book.ico";
+import colorsIco from "../../assets/colors.ico";
 import { FaGithubSquare } from "react-icons/fa";
 
 const Portfolio = () => {
@@ -14,8 +16,7 @@ const Portfolio = () => {
           src={uniroomLogo}
           alt="Logo"
           description="Uniroom App"
-          link="https://apps.apple.com/us/app/uniroom-roommate-finder/id1528826613
-https://apps.apple.com/us/app/uniroom-roommate-finder/id1528826613"
+          link="https://apps.apple.com/us/app/uniroom-roommate-finder/id1528826613"
           linkText="Checkout App"
           github="https://github.com/colbyb2/Uniroom"
         />
@@ -29,21 +30,21 @@ https://apps.apple.com/us/app/uniroom-roommate-finder/id1528826613"
           github="https://github.com/colbyb2/worldle"
         />
         <Project
-          title="Coming soon..."
-          src={stockLogo}
+          title="Mixr"
+          src={colorsIco}
           alt="Logo"
-          description="Project is currently in development."
-          link=""
-          linkText="..."
-          github=""
+          description="Test your eyes by mixing colors to match a different color."
+          link="https://colbyb2.github.io/mixr/"
+          linkText="Visit Site"
+          github="https://github.com/colbyb2/mixr"
         />
         <Project
-          title="Coming soon..."
-          src={stockLogo}
+          title="Nutrico"
+          src={bookIco}
           alt="Logo"
-          description="Project is currently in development."
-          link=""
-          linkText="..."
+          description="Food tracking journal to help you figure out what upsets your stomach."
+          link="https://nutrico-app.netlify.app"
+          linkText="Visit Site"
           github=""
         />
       </div>
