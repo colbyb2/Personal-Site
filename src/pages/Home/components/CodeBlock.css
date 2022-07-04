@@ -34,8 +34,8 @@ body {
   border-right: none;
   color: var(--color-text);
   white-space: nowrap;
-  animation: 3s typing 1s steps(30, end) forwards,
-    100ms removeCursor 4s forwards;
+  animation: 2s typing 1s steps(20, end) forwards,
+    100ms removeCursor 3s forwards;
   width: 0;
   margin: 5% 0;
 }
@@ -45,8 +45,8 @@ body {
   border-right: none;
   color: var(--color-text);
   white-space: nowrap;
-  animation: 3s typing 4s steps(25, end) forwards,
-    100ms removeCursor 7s forwards;
+  animation: 7s typing 3s steps(35, end) forwards,
+    100ms removeCursor 10s forwards;
   width: 0;
   margin: 5% 0;
 }
@@ -56,19 +56,8 @@ body {
   border-right: none;
   color: var(--color-text);
   white-space: nowrap;
-  animation: 4.5s typing 7s steps(30, end) forwards,
-    100ms removeCursor 11.5s forwards;
-  width: 0;
-  margin: 5% 0;
-}
-
-.typed-out-5 {
-  overflow: hidden;
-  border-right: none;
-  color: var(--color-text);
-  white-space: nowrap;
-  animation: 0.5s typing 11.5s steps(30, end) forwards,
-    100ms removeCursor 12s forwards;
+  animation: 1s typing 10s steps(40, end) forwards,
+    100ms removeCursor 11s forwards;
   width: 0;
   margin: 5% 0;
 }

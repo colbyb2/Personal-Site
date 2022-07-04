@@ -47,10 +47,9 @@ const WhoBlock = () => {
     <div className="block who-container">
       <div className="who-title">Who am I?</div>
       <div className="who-body">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo,
-        fugiat asperiores? Suscipit, culpa cupiditate, quibusdam maxime
-        laudantium iste autem necessitatibus a sequi repellat cumque dolorum
-        nisi beatae veritatis ducimus veniam!
+        My name is Colby Brown. I am currently a student at the University of
+        Wisconsin-Madison studying computer science. I enjoy both front and back
+        end web development along with building mobile apps.
       </div>
     </div>
   );
