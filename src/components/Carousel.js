@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { act } from "react-dom/cjs/react-dom-test-utils.production.min";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import "./Carousel.css";
 

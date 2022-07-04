@@ -107,7 +107,7 @@ const LanguageCard = ({ name, photo }) => {
   return (
     <div className="language-card">
       <div className="language-card-name">{name}</div>
-      <img className="language-card-photo" src={photo} alt="Photo" />
+      <img className="language-card-photo" src={photo} />
     </div>
   );
 };
@@ -116,7 +116,7 @@ const TechCard = ({ name, photo }) => {
   return (
     <div className="tech-card">
       <div className="tech-card-name">{name}</div>
-      <img src={photo} alt="Photo" className="tech-card-photo" />
+      <img src={photo} className="tech-card-photo" />
     </div>
   );
 };

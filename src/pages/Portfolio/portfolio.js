@@ -1,7 +1,7 @@
 import React from "react";
 import "./portfolio.css";
 import uniroomLogo from "../../assets/UniRoomLogo.png";
-import stockLogo from "../../assets/StockLogo.png";
+//import stockLogo from "../../assets/StockLogo.png";
 import globeIco from "../../assets/Globe.ico";
 import bookIco from "../../assets/book.ico";
 import colorsIco from "../../assets/colors.ico";
@@ -67,10 +67,15 @@ const Project = ({
       <img src={src} alt={alt} className="card-image" />
       <div className="card-description">{description}</div>
       <div className="link-container">
-        <a href={link} className="card-link" target="_blank">
+        <a href={link} className="card-link" target="_blank" rel="noreferrer">
           {linkText}
         </a>
-        <a href={github} className="card-github" target="_blank">
+        <a
+          href={github}
+          className="card-github"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaGithubSquare className="card-github-icon" />
           <div className="card-github-text">Github</div>
         </a>
