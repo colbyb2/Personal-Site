@@ -1,19 +1,14 @@
 import React from "react";
 import Carousel, { CarouselItem } from "../../../components/Carousel";
 import { Link } from "react-router-dom";
+import cssPhoto from "../../../assets/css.png";
+import htmlPhoto from "../../../assets/html.png";
+import csharpPhoto from "../../../assets/csharp.png";
+import swiftPhoto from "../../../assets/swift.png";
+import javascriptPhoto from "../../../assets/javascript.png";
+import javaPhoto from "../../../assets/java.jpeg";
+import expressPhoto from "../../../assets/express.png";
 import "./AboutBlock.css";
-
-//Language Photos
-const cssPhoto =
-  "https://seeklogo.com/images/C/css-3-logo-023C1A7171-seeklogo.com.png";
-const htmlPhoto = "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png";
-const csharpPhoto =
-  "https://cdn.icon-icons.com/icons2/2415/PNG/512/csharp_original_logo_icon_146578.png";
-const swiftPhoto = "https://developer.apple.com/swift/images/swift-og.png";
-const javascriptPhoto =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png";
-const javaPhoto =
-  "https://cdn.vox-cdn.com/thumbor/VoXJ8IaxCj5_U-366JhtUHLkdQ0=/0x0:640x427/1400x1050/filters:focal(0x0:640x427):format(jpeg)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg";
 
 //Tech Photos
 const xcodePhoto =
@@ -27,8 +22,6 @@ const bootstrapPhoto =
 const firebasePhoto =
   "https://firebase.google.com/downloads/brand-guidelines/PNG/logo-logomark.png";
 const nodejsPhoto = "https://logodix.com/logo/1764875.png";
-const expressPhoto =
-  "https://www.pngfind.com/pngs/m/136-1363736_express-js-icon-png-transparent-png.png";
 
 function AboutBlock() {
   return (

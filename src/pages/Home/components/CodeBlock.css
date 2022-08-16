@@ -45,8 +45,8 @@ body {
   border-right: none;
   color: var(--color-text);
   white-space: nowrap;
-  animation: 7s typing 3s steps(35, end) forwards,
-    100ms removeCursor 10s forwards;
+  animation: 4s typing 3s steps(55, end) forwards,
+    100ms removeCursor 7s forwards;
   width: 0;
   margin: 5% 0;
 }
@@ -56,8 +56,19 @@ body {
   border-right: none;
   color: var(--color-text);
   white-space: nowrap;
-  animation: 1s typing 10s steps(40, end) forwards,
-    100ms removeCursor 11s forwards;
+  animation: 3s typing 7s steps(40, end) forwards,
+    100ms removeCursor 10s forwards;
+  width: 0;
+  margin: 5% 0;
+}
+
+.typed-out-5 {
+  overflow: hidden;
+  border-right: none;
+  color: var(--color-text);
+  white-space: nowrap;
+  animation: 0.5s typing 10s steps(10, end) forwards,
+    100ms removeCursor 10.5s forwards;
   width: 0;
   margin: 5% 0;
 }
@@ -102,17 +113,6 @@ body {
 @media only screen and (max-width: 600px) {
   .code-text-normal {
     font-size: 1.3rem;
-  }
-
-  .typed-out-4 {
-    overflow: hidden;
-    border-right: none;
-    color: var(--color-text);
-    white-space: nowrap;
-    animation: 4.5s typing 7s steps(30, end) forwards,
-      100ms removeCursor 11.5s forwards, 100ms wrapLine 11.5s forwards;
-    width: 0;
-    margin: 5% 0;
   }
 }
 

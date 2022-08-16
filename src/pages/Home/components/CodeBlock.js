@@ -27,10 +27,9 @@ function CodeBlock() {
       <div className="code-function">
         <CodeLine index={1}>Hello!</CodeLine>
         <CodeLine index={2}>I'm Colby.</CodeLine>
-        <CodeLine index={3}>
-          Check out my portfolio and other info throughout the site!
-        </CodeLine>
-        <CodeLine index={4}>:)</CodeLine>
+        <CodeLine index={3}>Check out my portfolio and other</CodeLine>
+        <CodeLine index={4}>info throughout the site!</CodeLine>
+        <CodeLine index={5}>:)</CodeLine>
       </div>
       <div className=" code-function-text code-function-closing-bracket code-text-normal">
         {"}"}
