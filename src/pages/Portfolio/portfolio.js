@@ -5,6 +5,7 @@ import uniroomLogo from "../../assets/UniRoomLogo.png";
 import globeIco from "../../assets/Globe.ico";
 import bookIco from "../../assets/book.ico";
 import colorsIco from "../../assets/colors.ico";
+import calendarIco from "../../assets/calendar.ico";
 import { FaGithubSquare } from "react-icons/fa";
 
 const Portfolio = () => {
@@ -45,7 +46,16 @@ const Portfolio = () => {
           description="Food tracking journal to help you figure out what upsets your stomach."
           link="https://nutrico-app.netlify.app"
           linkText="Visit Site"
-          github=""
+          github="https://github.com/colbyb2/nutrico"
+        />
+        <Project
+          title="React Calendar"
+          src={calendarIco}
+          alt="Logo"
+          description="Customizable web calendar for React."
+          link=""
+          linkText="Demo"
+          github="https://github.com/colbyb2/react-calendar"
         />
       </div>
     </div>
