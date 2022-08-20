@@ -74,6 +74,10 @@
   transition: all 200ms ease-in-out;
 }
 
+.demo-link {
+  color: teal;
+}
+
 .card-link:hover {
   color: black;
   transform: scale(1.03);

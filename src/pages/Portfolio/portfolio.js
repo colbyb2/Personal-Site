@@ -47,6 +47,7 @@ const Portfolio = () => {
           link="https://nutrico-app.netlify.app"
           linkText="Visit Site"
           github="https://github.com/colbyb2/nutrico"
+          demo="https://www.youtube.com/watch?v=I_r-QMSNeB8"
         />
         <Project
           title="React Calendar"
@@ -70,6 +71,7 @@ const Project = ({
   link,
   linkText,
   github,
+  demo = null,
 }) => {
   return (
     <div className="project-card">
@@ -80,6 +82,16 @@ const Project = ({
         <a href={link} className="card-link" target="_blank" rel="noreferrer">
           {linkText}
         </a>
+        {demo ? (
+          <a
+            href={demo}
+            className="card-link demo-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            See Demo
+          </a>
+        ) : null}
         <a
           href={github}
           className="card-github"
